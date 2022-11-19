@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #box {
+            width: 100px;
+            height: 100px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+/***
+ * 1.变量不能重复声明(特指:当前作用域不能进行重复声明，
+   在下一个作用域的时候可以重复声明)
+   2. 块儿级作用域 3.不存在变量提升 4.不影响作用域链
+  **/
+   let box1= document.getElementById('box')
+            box1.addEventListener('click',function() {
+                setTimeout(()=>{
+                    box1.style.backgroundColor = 'pink'
+                },2000)
+            })
+  
+
+    </script>
+    <script>
+/***
+ * 1.变量不能重复声明(特指:当前作用域不能进行重复声明，
+   在下一个作用域的时候可以重复声明)
+   2. 块儿级作用域 3.不存在变量提升 4.不影响作用域链
+  **/
+   let box2= document.getElementById('box')
+            box2.addEventListener('click',function() {
+                setTimeout(()=>{
+                    box2.style.backgroundColor = 'pink'
+                },2000)
+            })
+  
+
+    </script>
+    <script>
+/***
+ * 1.变量不能重复声明(特指:当前作用域不能进行重复声明，
+   在下一个作用域的时候可以重复声明)
+   2. 块儿级作用域 3.不存在变量提升 4.不影响作用域链
+  **/
+   let box3= document.getElementById('box')
+            box3.addEventListener('click',function() {
+                setTimeout(()=>{
+                    box3.style.backgroundColor = 'pink'
+                },2000)
+            })
+  
+
+    </script>
+</body>
+</html>

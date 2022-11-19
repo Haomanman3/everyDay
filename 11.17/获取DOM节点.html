@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        <li id="a">1</li>
+        <li class="name">2</li>
+        <li id="none">3</li>
+    </ul>
+
+    <script>
+        /**
+         * 通过id获取
+         * document.getElementById（“id属性值”）
+         * 特点：根据ID值获取元素，返回元素对象；(id唯一)
+         * **/
+        // var  a=document.getElementById('a')
+        // console.log(a);
+
+        /***
+         * 通过标签名获取
+         * document.getElementsByTagName(“标签名字”);；
+         * 特点：标签名字获取元素,返回来的是一个伪数组,里面保存了多个的DOM对象；
+         * **/
+        var li = document.getElementsByTagName('li')
+        console.log(li);
+
+        /***
+         * 通过name值
+         *document.getElementsByName(“name属性的值”) 
+         * 根据name属性的值获取元素,返回来的是一个伪数组,里面保存了多个的DOM对象
+         * **/
+
+        var name = document.getElementsByName('name')
+        console.log(name);
+
+        /***
+         * 通过class
+         * document.getElementsByClassName(“类样式的名字”)；
+         * 据类样式的名字来获取元素,返回来的是一个伪数组,里面保存了多个的DOM对象
+         * **/
+        var classname = document.getElementsByClassName('classname')
+        console.log(classname);
+        /***
+         * 通过选择器
+         * document.querySelector(“选择器的名字”);
+         * 根据选择器获取元素,返回来的是一个元素对象
+         * **/
+        var que1 = document.querySelector('#none')
+        console.log(que1);
+
+        /***
+         * 通过所有选择器
+         *  document.querySelectorAll(“选择器的名字”)
+         * 据选择器获取元素,返回来的是一个伪数组,里面保存了多个的DOM对象
+         * **/
+        var queall = document.querySelectorAll('li')
+        console.log(queall);
+
+        /***
+         * 特殊元素获取
+         *  doucumnet.body
+         * 返回body元素对象
+         * **/
+        var body = document.body;
+        console.log(body);
+
+        /***
+         * HTML元素获取
+         * document.documentElement
+         * html元素对象
+         * **/
+        var el = document.documentElement
+        console.log(el);
+    </script>
+</body>
+
+</html>

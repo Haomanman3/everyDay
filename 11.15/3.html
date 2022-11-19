@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 转为数字
+        let str = '12'
+        let num1 = Number(str)
+        console.log(num1); //12
+        let str1 = '12.333'
+        let par = parseInt(str1)
+        console.log(par); //12
+        let str2 = "11.22"
+        let parflot = parseFloat(str2)
+        console.log(parflot); //11.22
+        console.log(parseFloat('123aaa456')); //123
+        console.log(Number('')); //0
+        console.log(Number('12')); //12
+        console.log(Number('12px')); //NaN
+        console.log(Number(true)); //1
+        console.log(Number(false)); //0
+        console.log(Number(undefined)); //NaN
+        console.log(Number(null)); //0
+        console.log(Number(1n)); //1
+        // let a=Symbol('1')
+        // console.log(Number(a));不能直接转化
+        let arr = [1, 2, 3]
+        console.log(Number(arr)); //NaN
+
+        // 转为字符串
+
+        console.log(String(1)); //1
+        console.log(String(NaN)); //NaN
+        console.log(String(null)); //null
+        console.log(String(undefined)); //undefined
+        console.log(String(Symbol)); //function Symbol() { [native code] }
+        console.log(String({})); //[object Object]
+        console.log(String(10 + '10')); //1010
+        console.log(String(10 + new Date())); //10Tue Nov 15 2022 09:57:08 GMT+0800 (中国标准时间)
+        console.log(String(10 + [10])); //1010
+
+        // 检测类型判断
+
+        let num = 123;
+        let str3 = "123";
+        let bool = true;
+        let arr1 = [];
+        let obj = {};
+        let fn = function () {};
+        let cla = class {};
+        let number = new Number(12)
+        //使用typeof检测
+        console.log(typeof num); //number
+        console.log(typeof str3); //string
+        console.log(typeof bool); //boolean
+        console.log(typeof arr1); //object
+        console.log(typeof obj); //object
+        console.log(typeof cla); //function
+        console.log(typeof number); //onject
+        console.log(typeof undefined); //undefined
+        console.log(typeof fn); //function
+
+
+        //使用instanceof检测
+        console.log(num instanceof Number); //false
+        console.log(str3 instanceof String); //false
+        console.log(bool instanceof Boolean); //false
+        console.log(arr1 instanceof Array); //true
+        console.log(obj instanceof Object); //true
+        console.log(fn instanceof Function); //true
+        console.log(cla instanceof Function); //true
+        console.log(number instanceof Number); //true
+        console.log(undefined instanceof Object); //false
+        console.log(null instanceof Number); //false
+
+        //使用constructor检测
+        console.log(num.constructor); //ƒ Number() { [native code] }
+        console.log(str3.constructor); //ƒ String() { [native code] }
+        console.log(bool.constructor); //ƒ Boolean() { [native code] }
+        console.log(arr1.constructor); //ƒ Array() { [native code] }
+        console.log(obj.constructor); //ƒ Object() { [native code] }
+        console.log(fn.constructor); //ƒ Function() { [native code] }
+        console.log(cla.constructor); //ƒ Function() { [native code] }
+        console.log(number.constructor); //ƒ Number() { [native code] }
+        // console.log( undefined.constructor );//报错
+        // console.log( null.constructor );//报错
+
+        //使用Object.prototype.toString.call()检测
+        console.log(Object.prototype.toString.call(num)); //[object Number]
+        console.log(Object.prototype.toString.call(str)); //[object String]
+        console.log(Object.prototype.toString.call(arr)); //[object Array]
+        console.log(Object.prototype.toString.call(bool)); // [object Boolean]
+        console.log(Object.prototype.toString.call(obj)); // [object Object]
+        console.log(Object.prototype.toString.call(fn)); // [object Function]
+        console.log(Object.prototype.toString.call(undefined)); // [object Undefined]
+        console.log(Object.prototype.toString.call(null)); //[object Null]
+        console.log(Object.prototype.toString.call(cla)); // [object Function]
+        console.log(Object.prototype.toString.call(arr1)); // [object Array]
+
+        //字符串长度
+        var str4 = '123456'
+        var str5 = '一二三四五六'
+        console.log(str4.length); //6
+
+
+        // 字符的位置是从0开始，依次递增
+        var a = str5.charAt(5)
+        console.log(a); //六
+        //拼接字符串
+        var aa = str5.concat(str4)
+        console.log(aa); //一二三四五六123456
+        console.log(str5 + str4); //一二三四五六123456
+        // 查找指定的字符
+        var str5 = '123456'
+        console.log(str4.indexOf('3')) //返回下标为2
+        console.log(str4.indexOf('7')) //返回-1
+
+        var str5 = '一二三三五六'
+        console.log(str5.replace('三', '九')); //一二九三五六
+        console.log(str5); //一二九四五六
+
+         //replace替换
+         var str5 = '一二三四五六'
+        console.log(str5); //一二三四五六
+        console.log(str5.replace('三', '九')); //一二九四五六
+
+        var str4 = '123456一二三'
+        console.log(str4); //123456一二三
+        console.log(str4.split()); //['123456一二三']
+        console.log(str4.split('')); // ['1', '2', '3', '4', '5', '6', '一', '二', '三']
+        console.log(str4.split('1')); //['', '23456一二三']
+        console.log(str4.split('1', 2)); //['', '23456一二三']
+
+
+        if (3 > 4) {
+            '条件为真'
+        } else {
+            '条件为假'
+        }
+        3 > 4 ? '条件为真' : '条件为假'
+        // 1.
+        let i = 10
+        var a = i++
+        console.log(i); //11
+        console.log(a); //10
+        // 2.
+        var a1 = ++i
+        console.log(i); //12
+        console.log(a1); //12
+    </script>
+</body>
+
+</html>
