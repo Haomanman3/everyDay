@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function timeout(){
+        return '你好'
+    }
+    async function p(){
+        let res=await timeout()
+        console.log(res);
+    }
+    p()
+    function fn() {
+        return 10
+    }
+
+    function fn1(num) {
+        return 10 + num
+    }
+
+    function fn2(num) {
+        return 10 + num
+    }
+
+    function fn3(num) {
+        return 10 + num
+    }
+
+    function fn4(num) {
+        return 10 + num
+    }
+    async function fn5() {
+        let res = await fn()
+        res = await fn1(res)
+        res = await fn2(res)
+        res = await fn3(res)
+        res = await fn4(res)
+        console.log(res);
+    }
+    fn5()
+</script>
+<!-- 第二遍 -->
+<script>
+    function timeout(){
+        return 'hello'
+    }
+    async function fn(){
+        let res=await timeout()
+        console.log(res);
+    }
+    fn()
+    function p1() {
+        return 10
+    }
+
+    function p2(num) {
+        return 20 + num
+    }
+
+    function p3(num) {
+        return 5 + num
+    }
+
+    function p4(num) {
+        return 15 + num
+    }
+
+    function p5(num) {
+        return 10 + num
+    }
+    async function p6() {
+        let res = await p1()
+        res = await p2(res)
+        res = await p3(res)
+        res = await p4(res)
+        res = await p5(res)
+        console.log(res);
+    }
+    p6()
+</script>
+<!-- 第三遍 -->
+<script>
+    function timeout(){
+        return '11'
+    }
+    async function a(){
+        let res=await timeout()
+        console.log(res);
+    }
+    p()
+    function a1() {
+        return 10
+    }
+
+    function a2(num) {
+        return 10 + num
+    }
+
+    function a3(num) {
+        return 10 + num
+    }
+
+    function a4(num) {
+        return 10 + num
+    }
+
+    function a5(num) {
+        return 10 + num
+    }
+    async function a6() {
+        let res = await a1()
+        res = await a2(res)
+        res = await a3(res)
+        res = await a4(res)
+        res = await a5(res)
+        console.log(res);
+    }
+    a6()
+</script>
+
+</html>

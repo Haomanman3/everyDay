@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /**新建set数组*/
+    let s=new Set()
+    console.log(s);
+
+    /**添加元素，只能单个进行添加**/
+    s.add('哈哈')
+    s.add('啦啦')
+    s.add('可能')
+    s.add('起风了')
+    console.log(s);
+/**删除元素，根据内容进行删除**/
+s.delete('啦啦')
+console.log(s);
+/**检测是否存在这个值*/
+console.log(s.has('可能'));
+/**循环遍历*/
+for(let key of s){
+    console.log(key);
+}
+/**获取长度*/
+console.log(s.size);
+let arr=['可能','起风了','玫瑰','荆棘','可能','起风了']
+let result=new Set(arr)
+let b=[...result]
+console.log(b);
+
+let a=Array.from(result)
+console.log(a);
+</script>
+<!-- 第二遍 -->
+<script>
+ /**新建set数组*/
+ let s1=new Set()
+    console.log(s1);
+
+    /**添加元素，只能单个进行添加**/
+    s1.add('哈哈')
+    s1.add('啦啦')
+    s1.add('可能')
+    console.log(s1);
+/**删除元素，根据内容进行删除**/
+s1.delete('啦啦')
+console.log(s1);
+/**检测是否存在这个值*/
+console.log(s1.has('可能'));
+/**循环遍历*/
+for(let key of s1){
+    console.log(key);
+}
+/**获取长度*/
+console.log(s1.size);
+let arr1=['可能','起风了','玫瑰','荆棘','可能','起风了']
+let result1=new Set(arr1)
+let b1=[...result1]
+console.log(b1);
+
+let a1=Array.from(result1)
+console.log(a1);
+
+</script>
+
+<!-- 第三遍 -->
+<script>
+    /**新建set数组*/
+    let s2=new Set()
+       console.log(s2);
+   
+       /**添加元素，只能单个进行添加**/
+       s2.add('哈哈')
+       s2.add('可能')
+       s2.add('起风了')
+       console.log(s2);
+   /**删除元素，根据内容进行删除**/
+   s2.delete('哈哈')
+   console.log(s1);
+   /**检测是否存在这个值*/
+   console.log(s2.has('可能'));
+   /**循环遍历*/
+   for(let key of s2){
+       console.log(key);
+   }
+   /**获取长度*/
+   console.log(s1.size);
+   let arr2=['可能','起风了','玫瑰','荆棘','可能','起风了']
+   let result2=new Set(arr2)
+   let b2=[...result1]
+   console.log(b1);
+   
+   let a2=Array.from(result2)
+   console.log(a1);
+   
+   </script>
+</html>

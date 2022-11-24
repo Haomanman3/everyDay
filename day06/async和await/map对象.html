@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const m=new Map([
+        ['name','张三'],
+        ['title','Author']
+    ])
+    console.log(m.size);
+    m.has('name')
+    m.get('name')
+    m.has('title')
+    m.get('title')
+    /**声明一个map函数**/
+    const map = new Map();
+    console.log(map);
+    // /**set一个属性**/
+    map.set('name', '哈哈')
+    // /**set一个方法**/
+    map.set('change', function () {
+        console.log('起风了');
+    })
+    let key = {
+        school: '啦啦啦'
+    }
+    map.set('key', ['韵达', '中通', '邮政'])
+    console.log(map);
+    // /**删除其中一个key*/
+    map.delete('name')
+    console.log(map);
+    // /**判断当前的键是否存在map中**/
+    console.log(map.has('change'));
+    console.log(map.has('keys'));
+    // /**获取一个map*/
+    console.log(map.get('change'));
+    console.log(map.get('key'));
+    console.log(map.size);
+    // /**遍历**/
+    for (let key of map) {
+        console.log(key);
+    }
+</script>
+<!-- 第二遍 -->
+<script>
+ const map1=new Map([
+        ['name','张三'],
+        ['title','aaa'],
+        ['age','18']
+    ])
+    /**返回数组个数*/
+    console.log(map1.size);
+    map1.has('name')
+    map1.get('name')
+    map1.has('title')
+    map1.get('title')
+    /**声明一个map函数**/
+    const p = new Map();
+    console.log(p);
+    // /**set一个属性**/
+    p.set('name', '添加')
+    // /**set一个方法**/
+    p.set('change', function () {
+        console.log('这一路上走走停停');
+    })
+    let key1 = {
+        school: '啦啦啦'
+    }
+    p.set('key', ['韵达', '中通', '邮政'])
+    console.log(p);
+    // /**删除其中一个key*/
+    p.delete('name')
+    console.log(p);
+    // /**判断当前的键是否存在map中**/
+    console.log(p.has('change'));
+    console.log(p.has('keys'));
+    // /**获取一个map*/
+    console.log(p.get('change'));
+    console.log(p.get('key'));
+    console.log(p.size);
+    // /**遍历**/
+    for (let key of p) {
+        console.log(key);
+    }
+
+</script>
+
+<!-- 第三遍 -->
+<script>
+
+const ma=new Map([
+        ['name','张三'],
+        ['title','aaa']
+    ])
+    /**返回数组个数*/
+    console.log(ma.size);
+    ma.has('name')
+    ma.get('name')
+    ma.has('title')
+    ma.get('title')
+    /**声明一个map函数**/
+    const map2 = new Map();
+    console.log(map2);
+    // /**set一个属性**/
+    map2.set('name', '添加')
+    // /**set一个方法**/
+    map2.set('change', function () {
+        console.log('顺着少年漂流的痕迹');
+    })
+    let key2 = {
+        school: 'SCHOOL'
+    }
+    map2.set('key', ['韵达', '中通', '邮政'])
+    console.log(map2);
+    // /**删除其中一个key*/
+    map2.delete('name')
+    console.log(map2);
+    // /**判断当前的键是否存在map中**/
+    console.log(map2.has('change'));
+    console.log(map2.has('keys'));
+    // /**获取一个map*/
+    console.log(map2.get('change'));
+    console.log(map2.get('key'));
+    console.log(map2.size);
+    // /**遍历**/
+    for (let key of map2) {
+        console.log(key);
+    }
+    
+</script>
+
+</html>

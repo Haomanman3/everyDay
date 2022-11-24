@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+const p1=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(1111)
+    },300)
+})
+const p2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(2222)
+    },500)
+})
+const p3=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(3333)
+    },1000)
+})
+Promise.all([p1,p2,p3]).then((res) => {
+    console.log('res',res);
+}).catch(err=>{
+    console.log('err',err);
+})
+
+</script>
+<script>
+    
+    const a=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('哈哈哈')
+        },300)
+    })
+    const a1=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('嘿嘿嘿')
+        },500)
+    })
+    const a2=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('123')
+        },1000)
+    })
+    Promise.all([a,a1,a2]).then((res) => {
+        console.log('res',res);
+    }).catch(err=>{
+        console.log('err',err);
+    })
+    
+    </script>
+    <script>
+    
+        const p4=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('我是p4')
+            },300)
+        })
+        const p5=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('我是p5')
+            },500)
+        })
+        const p6=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('我是p6')
+            },1000)
+        })
+        Promise.all([p4,p5,p6]).then((res) => {
+            console.log('res',res);
+        }).catch(err=>{
+            console.log('err',err);
+        })
+        
+        </script>
+</html>

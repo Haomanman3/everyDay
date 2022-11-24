@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function fn(a) {
+        return new Promise((resolve, reject) => {
+            resolve(a)
+        })
+    }
+    fn(123).then(res => {
+        console.log(res);
+    })
+    fn(456).then(res => {
+        console.log(res);
+    })
+</script>
+<!-- 第二遍 -->
+<script>
+    function fn(a) {
+        return new Promise((resolve, reject) => {
+            resolve(a)
+        })
+    }
+    fn('哈哈').then(res => {
+        console.log(res);
+    })
+    fn('哈喽').then(res => {
+        console.log(res);
+    })
+</script>
+<!-- 第三遍 -->
+<script>
+    function fn(a) {
+        return new Promise((resolve, reject) => {
+            resolve(a)
+        })
+    }
+    fn('123').then(res => {
+        console.log(res);
+    })
+    fn('456').then(res => {
+        console.log(res);
+    })
+</script>
+
+</html>

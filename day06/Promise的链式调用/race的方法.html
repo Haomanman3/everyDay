@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+
+<!-- <script>
+
+const p1=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(1111)
+    },300)
+})
+const p2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        reject(2222)
+    },500)
+})
+const p3=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(3333)
+    },1000)
+})
+Promise.race([p1,p2,p3]).then((res) => {
+    console.log('res',res);
+}).catch(err=>{
+    console.log('err',err);
+})
+
+</script> -->
+
+<!-- <script>
+const fn=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('我是fn')
+    },300)
+})
+const fn1=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        reject('我是fn1')
+    },500)
+})
+const fn2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('我是fn2')
+    },1000)
+})
+Promise.race([fn,fn1,fn2]).then((res) => {
+    console.log('res',res);
+}).catch(err=>{
+    console.log('err',err);
+})
+
+</script> -->
+
+
+<script>
+    const a=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('我是a')
+        },2000)
+    })
+    const a1=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject('我是a1')
+        },500)
+    })
+    const a2=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('我是a2')
+        },1000)
+    })
+    Promise.race([a,a1,a2]).then((res) => {
+        console.log('res',res);
+    }).catch(err=>{
+        console.log('err',err);
+    })
+    
+    </script>
+</html>
