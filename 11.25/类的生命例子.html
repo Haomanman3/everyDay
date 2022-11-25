@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /**es5的构造函数写法*/
+    function Phons(brand, price) {
+        this.brand = brand,
+            this.price = price
+    }
+    Phons.prototype.call = function () {
+        console.log('我用于打电话');
+    }
+
+    Phons.prototype.info = function () {
+        return '(我的手机型号是' + this.brand + ',价格是' + this.price + '铃声是可能)'
+    }
+    let p = new Phons('oppo', '1999');
+    console.log(p);
+
+
+    /**es6的构造函数写法*/
+
+    class Phone {
+        constructor(brand, price) {
+            this.brand = brand,
+                this.price = price
+        }
+        call() {
+            console.log('我用于打电话');
+        }
+        info() {
+            return '(我的手机型号是' + this.brand + ',价格是' + this.price + '铃声是可能)'
+        }
+    }
+    let p1 = new Phone('oppo', '1999')
+    let a = p1.info()
+    console.log(p1.call);
+    console.log(a);
+</script>
+<script>
+    /**es5的构造函数写法*/
+    function Phons1(brand, price) {
+        this.brand = brand,
+            this.price = price
+    }
+    Phons1.prototype.call = function () {
+        console.log('我用于打电话');
+    }
+
+    Phons1.prototype.info = function () {
+        return '(我的手机型号是' + this.brand + ',价格是' + this.price + '铃声是可能)'
+    }
+    let pp= new Phons1('华为', '1999');
+    console.log(pp);
+
+
+    /**es6的构造函数写法*/
+
+    class Phone1 {
+        constructor(brand, price) {
+            this.brand = brand,
+                this.price = price
+        }
+        call() {
+            console.log('我用于打电话');
+        }
+        info() {
+            return '(我的手机型号是' + this.brand + ',价格是' + this.price + '铃声是可能)'
+        }
+    }
+    let p2 = new Phone1('华为', '1999')
+    let a1 = p2.info()
+    console.log(p2.call);
+    console.log(a1);
+</script>
+<script>
+    /**es5的构造函数写法*/
+    function Phons2(brand, price) {
+        this.brand = brand,
+            this.price = price
+    }
+    Phons2.prototype.call = function () {
+        console.log('打电话');
+    }
+
+    Phons2.prototype.info = function () {
+        return '(我的手机型号是' + this.brand + ',价格是' + this.price + ')'
+    }
+    let p3 = new Phons2('苹果', '999');
+    console.log(p3);
+
+
+    /**es6的构造函数写法*/
+
+    class Phone2 {
+        constructor(brand, price) {
+            this.brand = brand,
+                this.price = price
+        }
+        call() {
+            console.log('我用于打电话');
+        }
+        info() {
+            return '(我的手机型号是' + this.brand + ',价格是' + this.price + '铃声是可能)'
+        }
+    }
+    let p4 = new Phone2('苹果', '9999')
+    let a2 = p4.info()
+    console.log(p4.call);
+    console.log(a2);
+</script>
+
+</html>

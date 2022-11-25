@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Phone(brand, price) {
+        this.brand = brand
+        this.price = price;
+    }
+    Phone.prototype.call = function () {
+        console.log('用于电话');
+    }
+
+    function SmartPhone(brand, price, color, size) {
+        Phone.call(this, brand, price);
+        this.color = color;
+        this.size = size;
+    }
+    SmartPhone.prototype = new Phone;
+    SmartPhone.prototype.constructor = SmartPhone;
+
+    SmartPhone.prototype.photo = function () {
+        console.log('拍照');
+    }
+    SmartPhone.prototype.playGame = function () {
+        console.log('玩游戏');
+    }
+
+    const ch = new SmartPhone('oppo', 1999, '天蓝色', '5.5')
+    console.log(ch);
+</script>
+<script>
+    function Play(sing, run) {
+        this.sing = sing
+        this.run = run;
+    }
+    Play.prototype.dance = function () {
+        console.log('跳舞');
+    }
+
+    function Active(sing, run, rattle, basketball) {
+        Play.call(this, sing, run);
+        this.rattle = rattle;
+        this.basketball = basketball;
+    }
+    Active.prototype = new Play();
+    Active.prototype.constructor = Active;
+
+    Active.prototype.photo = function () {
+        console.log('拍照');
+    }
+    Active.prototype.playGame = function () {
+        console.log('玩游戏');
+    }
+
+    const wan = new Active('唱歌', '跑步', '乒乓', '篮球')
+    console.log(wan);
+</script>
+<script>
+    function Phone(brand, price) {
+        this.brand = brand
+        this.price = price;
+    }
+    Phone.prototype.call = function () {
+        console.log('可电话');
+    }
+
+    function SmartPhone(brand, price, color, size) {
+        Phone.call(this, brand, price);
+        this.color = color;
+        this.size = size;
+    }
+    SmartPhone.prototype = new Phone;
+    SmartPhone.prototype.constructor = SmartPhone;
+
+    SmartPhone.prototype.photo = function () {
+        console.log('拍照');
+    }
+    SmartPhone.prototype.playGame = function () {
+        console.log('玩游戏');
+    }
+
+    const ch1 = new SmartPhone('oppo', 1999, '红黑色', '5.5')
+    console.log(ch);
+</script>
+
+</html>

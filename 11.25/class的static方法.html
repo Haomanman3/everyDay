@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Tri{
+        static tripple(num=1){
+            return num*3
+        }
+    }
+    class Fatch extends Tri {
+        static tripple(num) {
+            return super.tripple(num)*super.tripple(num);
+        }
+    }
+    console.log(Tri.tripple());
+    console.log(Tri.tripple(10));
+    let tp=new Tri()
+    console.log(Fatch.tripple(3));
+    // console.log(tp.tripple());
+</script>
+<script>
+    class Tri1{
+        static tripple(num=1){
+            return num*3
+        }
+    }
+    class Fatch1 extends Tri1 {
+        static tripple(num) {
+            return super.tripple(num)*super.tripple(num);
+        }
+    }
+    console.log(Tri1.tripple());
+    console.log(Tri1.tripple(6));
+    let tp1=new Tri1()
+    console.log(Fatch1.tripple(2));
+    // console.log(tp.tripple());
+</script>
+<script>
+    class Tri2{
+        static tripple(num=1){
+            return num*3
+        }
+    }
+    class Fatch2 extends Tri2 {
+        static tripple(num) {
+            return super.tripple(num)*super.tripple(num);
+        }
+    }
+    console.log(Tri2.tripple());
+    console.log(Tri2.tripple(5));
+    let tp2=new Tri2()
+    console.log(Fatch2.tripple(1));
+    // console.log(tp.tripple());
+</script>
+</html>

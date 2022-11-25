@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Phone {
+        get price() {
+            console.log('我被读取了');
+            return '哈哈哈'
+        }
+        set price(val) {
+            console.log('被修改了');
+        }
+    }
+    let s = new Phone();
+    console.log(s.price);
+    s.price = 'free'
+</script>
+<script>
+    class Phone1 {
+        get price() {
+            console.log('我被读取了');
+            return '啦啦'
+        }
+        set price(val) {
+            console.log('被修改了');
+        }
+    }
+    let s1 = new Phone1();
+    console.log(s1.price);
+    s1.price = 'free'
+</script>
+<script>
+    class Phone2 {
+        get price() {
+            console.log('读取');
+            return '111'
+        }
+        set price(val) {
+            console.log('已修改了');
+        }
+    }
+    let s2 = new Phone2();
+    console.log(s2.price);
+    s2.price = 'free'
+</script>
+
+</html>
