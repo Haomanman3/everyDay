@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div>姓：<input type="text" v-model="firstName"></div>
+        <div>名：<input type="text" v-model="lastName"></div>
+        <div>全名：<input type="text" v-model="quan"></div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+    </div>
+    <!-- <div id="root">
+        <div>姓：<input type="text" v-model="firstName"></div>
+        <div>名：<input type="text" v-model="lastName"></div>
+        <div>全名：<input type="text" v-model="quan"></div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+    </div> -->
+    <!-- <div id="root">
+        <div>姓：<input type="text" v-model="firstName"></div>
+        <div>名：<input type="text" v-model="lastName"></div>
+        <div>全名：<input type="text" v-model="quan"></div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+        <div>{{quan}}</div>
+    </div> -->
+</body>
+<script>
+    const vm = new Vue({
+            el: "#root",
+            data: {
+                firstName: "张",
+                lastName: '三',
+
+            },
+            computed: {
+                //    quan:{
+                //     get: function() {
+                //         console.log('我是被读取的');
+                //         return this.firstName+'-'+this.lastName
+                //     },
+                // set: function(value) {
+                //     console.log('我是被设置的');
+                //     let result=value.split('-')
+                //     this.firstName = result[0];
+                //     this.lastName = result[1];
+                // }
+                // 简化写法
+                quan() {
+                console.log('我是被读取的');
+                return this.firstName + "-" + this.lastName;
+            }
+            },
+           
+
+
+
+        },
+    )
+    // const vm = new Vue({
+    //         el: "#root",
+    //         data: {
+    //             firstName: "张",
+    //             lastName: '三',
+
+    //         },
+    //         computed: {
+    //             //    quan:{
+    //             //     get: function() {
+    //             //         console.log('我是被读取的');
+    //             //         return this.firstName+'-'+this.lastName
+    //             //     },
+    //             // set: function(value) {
+    //             //     console.log('我是被设置的');
+    //             //     let result=value.split('-')
+    //             //     this.firstName = result[0];
+    //             //     this.lastName = result[1];
+    //             // }
+    //             // 简化写法
+    //             quan() {
+    //             console.log('我是被读取的');
+    //             return this.firstName + "-" + this.lastName;
+    //         }
+    //         },
+    //     },
+    // )
+    // const vm = new Vue({
+    //         el: "#root",
+    //         data: {
+    //             firstName: "张",
+    //             lastName: '三',
+
+    //         },
+    //         computed: {
+    //             //    quan:{
+    //             //     get: function() {
+    //             //         console.log('我是被读取的');
+    //             //         return this.firstName+'-'+this.lastName
+    //             //     },
+    //             // set: function(value) {
+    //             //     console.log('我是被设置的');
+    //             //     let result=value.split('-')
+    //             //     this.firstName = result[0];
+    //             //     this.lastName = result[1];
+    //             // }
+    //             // 简化写法
+    //             quan() {
+    //             console.log('我是被读取的');
+    //             return this.firstName + "-" + this.lastName;
+    //         }
+    //         },   
+    //     },
+    // )
+</script>
+
+</html>
