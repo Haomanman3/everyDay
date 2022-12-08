@@ -1,0 +1,56 @@
+{
+	"data": [
+		{
+			"id": 269,
+			"roleName": "12345",
+			"roleDesc": "2345",
+			"children": []
+		},
+		{
+			"id": 270,
+			"roleName": "123451234",
+			"roleDesc": "1234561234",
+			"children": []
+		},
+		{
+			"id": 271,
+			"roleName": "12345234",
+			"roleDesc": "123456234",
+			"children": []
+		},
+		{
+			"id": 272,
+			"roleName": "12345222",
+			"roleDesc": "1234562222",
+			"children": []
+		},
+		{
+			"id": 273,
+			"roleName": "12345222221231232343",
+			"roleDesc": "12345622222223423442345345",
+			"children": []
+		},
+		{
+			"id": 274,
+			"roleName": "123",
+			"roleDesc": "123",
+			"children": []
+		},
+		{
+			"id": 275,
+			"roleName": "123",
+			"roleDesc": "123",
+			"children": []
+		},
+		{
+			"id": 276,
+			"roleName": "bashao",
+			"roleDesc": "bashaozhenshuai",
+			"children": []
+		}
+	],
+	"meta": {
+		"msg": "获取成功",
+		"status": 200
+	}
+}

@@ -11,7 +11,7 @@
             class="el-menu-vertical-demo"
             background-color="#545c64"
             text-color="#fff"
-            active-text-color="#ffd04b"
+            active-text-color="#409eff"
             router
             unique-opened
             :collapse="isCollapse"
@@ -22,14 +22,13 @@
               :key="item.id"
             >
               <template slot="title">
-                <i :class="item.icon"></i>
+                <i class="el-icon-location"></i>
                 <span>{{ item.authName }}</span>
               </template>
               <el-menu-item-group v-for="ele in item.children" :key="ele.id">
-                <el-menu-item :index="'/home/' + ele.path"
-                  ><i :class="ele.icon"></i>{{ ele.authName }}</el-menu-item
-                >
-                <!-- </el-menu-item> -->
+                <el-menu-item :index="'/home/' + ele.path">{{
+                  ele.authName
+                }}</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
           </el-menu>
@@ -41,7 +40,7 @@
             <div>
               <i class="el-icon-s-fold" @click="isCollapse = !isCollapse"></i>
             </div>
-            <el-button type="info">退出</el-button>
+            <el-button type="info" @click="$router.push('/')">退出</el-button>
           </div>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item
@@ -51,7 +50,10 @@
             >
           </el-breadcrumb>
         </div>
-        <router-view></router-view>
+
+        <div class="right">
+          <router-view></router-view>
+        </div>
       </el-main>
     </el-container>
   </div>
@@ -67,8 +69,11 @@ export default {
   },
   methods: {},
   created() {
-    this.$http.get(this.$http.addorUrl("/menus")).then((res) => {
-      console.log(res)
+    this.$http({
+      method: "get",
+      url: "/api/menus"
+    }).then((res) => {
+      // console.log(res)
       this.leftDate = res.data.data
     })
   },
@@ -90,7 +95,7 @@ export default {
 }
 .el-aside {
   height: 100%;
-  background-color: #545c64;
+  background-color: #545d64;
 }
 .el-menu {
   border: 0;
@@ -114,5 +119,14 @@ export default {
 .el-card__body,
 .el-main {
   padding: 0;
+}
+.el-main {
+  background-color: #f2f2f2;
+}
+.el-breadcrumb {
+  margin-left: 10px;
+}
+.right {
+  margin: 10px;
 }
 </style>

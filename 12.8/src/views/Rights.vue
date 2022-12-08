@@ -1,14 +1,26 @@
 <template>
-  <div>权限列表</div>
+  <div>
+    <el-card class="box-card">
+      <el-table :data="tableData" stripe style="width: 100%">
+        <el-table-column type="index" label="#"> </el-table-column>
+        <el-table-column prop="date" label="权限名称"> </el-table-column>
+        <el-table-column prop="date" label="路径"> </el-table-column>
+        <el-table-column prop="date" label="权限等级"> </el-table-column>
+      </el-table>
+    </el-card>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {}
+    return {
+      tableData: []
+    }
   },
   methods: {},
-  created() {},
+  created() {
+  },
   mounted() {},
   components: {},
   computed: {},

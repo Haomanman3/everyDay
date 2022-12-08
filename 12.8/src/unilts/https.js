@@ -106,9 +106,6 @@ http.interceptors.response.use(
     }
   }
 )
-http.addorUrl = (actionName) => {
-  return process.env.VUE_APP_BASE_API + actionName
-}
 
 // console.log(http, "123")
 

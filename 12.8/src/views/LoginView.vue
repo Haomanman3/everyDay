@@ -51,17 +51,14 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           // alert("submit!")
-          // this.$http({
-          //   url: "/login",
-          //   method: "post",
-          //   data: this.ruleForm
-          // }).then((res) => {
-          //   console.log(res)
-          //   this.$router.push("/home")
-          // })
-          this.$http
-            .post(this.$http.addorUrl("/login"), this.ruleForm)
-            .then(() => this.$router.push("/home"))
+          this.$http({
+            url: "/api/login",
+            method: "post",
+            data: this.ruleForm
+          }).then((res) => {
+            console.log(res)
+            this.$router.push("/home")
+          })
         } else {
           console.log("error submit!!")
           return false

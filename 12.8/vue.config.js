@@ -1,7 +1,7 @@
 const { defineConfig } = require("@vue/cli-service")
 let target =
   process.env.VUE_APP_MOCK_ENABLE == "true"
-    ? "http://localhost:8090/"
+    ? "http://localhost:8090"
     : process.env.VUE_APP_CONSOLE_URL
 module.exports = defineConfig({
   transpileDependencies: true,

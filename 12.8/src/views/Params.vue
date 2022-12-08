@@ -1,5 +1,5 @@
 <template>
-  <div>分类参数</div>
+  <div><el-card class="box-card"> </el-card></div>
 </template>
 
 <script>

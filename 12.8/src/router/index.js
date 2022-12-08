@@ -25,6 +25,11 @@ const routes = [
         meta: ["首页", "用户管理", "用户列表"]
       },
       {
+        path: "add",
+        name: "add",
+        component: () => import("../views/Add.vue")
+      },
+      {
         path: "roles",
         name: "roles",
         component: () => import("../views/Roles.vue"),
