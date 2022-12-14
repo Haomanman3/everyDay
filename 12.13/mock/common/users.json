@@ -1,0 +1,30 @@
+{
+  "data": {
+    "total": 962,
+    "pagenum": 1,
+    "users": [
+      {
+        "id": 500,
+        "role_name": "超级管理员",
+        "username": "admin",
+        "create_time": 1486720211,
+        "mobile": "13758895789",
+        "email": "11111@qq.com",
+        "mg_state": true
+      },
+      {
+        "id": 1296,
+        "role_name": "超级管理员",
+        "username": "user29",
+        "create_time": 1670641746,
+        "mobile": "13909090909",
+        "email": "11A隐藏富豪@qq.com",
+        "mg_state": false
+      }
+    ]
+  },
+  "meta": {
+    "msg": "获取管理员列表成功",
+    "status": 200
+  }
+}
