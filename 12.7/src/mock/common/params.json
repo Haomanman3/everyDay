@@ -1,0 +1,197 @@
+{
+  "data": [
+    {
+      "cat_id": 1754,
+      "cat_name": "收到VS",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false,
+      "children": [
+        {
+          "cat_id": 1755,
+          "cat_name": "4324234",
+          "cat_pid": 1754,
+          "cat_level": 1,
+          "cat_deleted": false,
+          "children": [
+            {
+              "cat_id": 1783,
+              "cat_name": "22",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1784,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1785,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1786,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1787,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1788,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1789,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1790,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1791,
+              "cat_name": "asdasd",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            },
+            {
+              "cat_id": 1792,
+              "cat_name": "霸道的华",
+              "cat_pid": 1755,
+              "cat_level": 2,
+              "cat_deleted": false
+            }
+          ]
+        },
+        {
+          "cat_id": 1794,
+          "cat_name": "a",
+          "cat_pid": 1754,
+          "cat_level": 1,
+          "cat_deleted": false
+        }
+      ]
+    },
+    {
+      "cat_id": 1765,
+      "cat_name": "1",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false,
+      "children": [
+        {
+          "cat_id": 1766,
+          "cat_name": "111",
+          "cat_pid": 1765,
+          "cat_level": 1,
+          "cat_deleted": false
+        },
+        {
+          "cat_id": 1773,
+          "cat_name": "的萨",
+          "cat_pid": 1765,
+          "cat_level": 1,
+          "cat_deleted": false
+        }
+      ]
+    },
+    {
+      "cat_id": 1767,
+      "cat_name": "123123",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false
+    },
+    {
+      "cat_id": 1770,
+      "cat_name": "达大厦",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false,
+      "children": [
+        {
+          "cat_id": 1775,
+          "cat_name": "达大厦",
+          "cat_pid": 1770,
+          "cat_level": 1,
+          "cat_deleted": false,
+          "children": [
+            {
+              "cat_id": 1776,
+              "cat_name": "未达到哇",
+              "cat_pid": 1775,
+              "cat_level": 2,
+              "cat_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cat_id": 1774,
+      "cat_name": "大娃",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false
+    },
+    {
+      "cat_id": 1777,
+      "cat_name": "测试1",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false,
+      "children": [
+        {
+          "cat_id": 1778,
+          "cat_name": "测试1下面的测试1",
+          "cat_pid": 1777,
+          "cat_level": 1,
+          "cat_deleted": false,
+          "children": [
+            {
+              "cat_id": 1779,
+              "cat_name": "测试1的children",
+              "cat_pid": 1778,
+              "cat_level": 2,
+              "cat_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cat_id": 1795,
+      "cat_name": "a",
+      "cat_pid": 0,
+      "cat_level": 0,
+      "cat_deleted": false
+    }
+  ],
+  "meta": {
+    "msg": "获取成功",
+    "status": 200
+  }
+}
