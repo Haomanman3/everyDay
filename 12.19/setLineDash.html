@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="c" width="300" height="300" style="border: 1px solid #ccc;"></canvas>
+</body>
+<script>
+    const cnv = document.getElementById("c")
+    const ctx = cnv.getContext("2d")
+    ctx.lineWidth = 20
+    ctx.strokeStyle = "pink"
+    ctx.moveTo(50, 50)
+    ctx.lineTo(200, 50)
+    ctx.setLineDash([10])
+    ctx.stroke()
+    ctx.beginPath()
+    ctx.moveTo(50, 100)
+    ctx.lineTo(200, 100)
+    ctx.setLineDash([10, 20])
+    ctx.stroke()
+    ctx.beginPath()
+    ctx.moveTo(50, 150)
+    ctx.lineTo(200, 150)
+    ctx.setLineDash([10, 20, 5])
+    ctx.stroke()
+</script>
+
+</html>

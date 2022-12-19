@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="c" width="800" height="800" style="border: 1px solid #ccc;"></canvas>
+</body>
+<script>
+    const cnv = document.getElementById("c")
+    const ctx = cnv.getContext("2d")
+    ctx.font = "60px Arial"
+    ctx.strokeText("哈哈", 30, 90)
+    ctx.fillStyle = "pink"
+    ctx.fillText("哈哈", 30, 90)
+    // ctx.textBaseline = "alphabetic"
+    // ctx.fillText("哇哦alphabetic",200,150)
+    // ctx.textBaseline = "top"
+    // ctx.fillText("哇哦top",10,150)
+    // ctx.textBaseline = "bottom"
+    // ctx.fillText("哇哦bottom",320,150)
+    // ctx.textBaseline = "middle"
+    // ctx.fillText("哇哦middle",480,150)
+    // ctx.textBaseline = "hanging"
+    // ctx.fillText("哇哦hanging",640,150)
+
+</script>
+
+</html>
