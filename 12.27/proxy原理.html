@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj={
+        name:'张三',
+        arr:['吃','睡','玩']
+    }
+    let handler={
+        get(target,key){
+            console.log('收集');
+            if(typeof target[key]=='object'&&target[key]!==null){
+                return new Proxy(target[key],handler)
+            }
+            return Reflect.get(target, key)
+        },
+        set(target, key, newValue) {
+            console.log('触发更新');
+            let value=target[key];
+            console.log(key,value,newValue);
+            if(!value){
+                console.log('新增');
+            }else if(value!=target[key]){
+                console.log('修改属性');
+            }
+            return Reflect.set(target,key,newValue)
+        }
+    }
+    let proxy=new Proxy(obj,handler)
+    console.log(proxy.name,"38");
+</script>
+</html>
