@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function Person(name){
+        this.name = name;
+        this.sayName = function(){
+            alert(this.name)
+        }
+    }
+    var p1=new Person('张');
+
+    var p2=new Person('三')
+    p1,sayName()
+    p2.sayName()
+    alert(p1.constructor===p2.constructor)
+    alert(p1.constructor===Person)
+    alert(typeof(p1))
+    alert(p1 instanceof Object)
+    alert(p2 instanceof Object)
+    alert(p1.sayName===p2.sayName)
+</script>
+</html>
